@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	width: 100%;
+}
+.container {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.header-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+header {
+	background-color: blue;
+	padding: 20px 0;
+}
+.header-wrapper ul {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+header li::before {
+	/* content: "🔥"; */
+}
+header li:after {
+	content: "";
+	display: block;
+	width: 50%;
+	height: 2px;
+	background-color: white;
+	margin: 0 auto;
+	border-radius: 5px;
+	transition: all 0.3s;
+}
+header li:hover::after {
+	width: 100%;
+}
+.box {
+	width: 300px;
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+.box:nth-child(2n) {
+	background-image: url("../images/paraplanit-frena-gudaurshi-1.jpg");
+}
+.box:nth-child(2n + 1) {
+	background-image: url("../images/paraplanit-frena-gudaurshi-4.jpg");
+}
+footer {
+	background-color: blue;
+}
+
+form > * {
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.footer-grid {
+	padding: 20px 0;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.made-by {
+	border-top: 1px solid white;
+}
+
+iframe {
+	width: 100%;
+	height: 400px;
+}
+
+.button-parent {
+	display: flex;
+	justify-content: end;
+}
+
+.parent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.about {
+	header {
+		background-color: red;
+	}
+}
+
+.about__header {
+	background-color: red;
+}
+/* 768    mobile */
+/* 768-1024 tablet */
+/* 1024   desktop */
+/* @media(max-width: 1024px){
+
+} */
+
+@media (768px < width < 1024px) {
+	.box:nth-child(2n + 1) {
+		background-color: red;
+		background-blend-mode: darken;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	/* styles for tablet */
+}
+
+@media (width < 768px) {
+	section {
+		background-color: blueviolet;
+	}
+
+	.footer-grid {
+		grid-template-columns: 1fr;
+	}
+	header nav {
+		display: none;
+	}
+	.box:last-child {
+		order: -1;
+	}
+	.box:nth-child(2n + 1) {
+		background-color: darkblue;
+		background-blend-mode: multiply;
+	}
+}
+
+/* @media(min-width: 768px){} */
+@media (width > 768px) {
+	/* styles for tablet */
+}
+@media (width > 1024px) {
+	/* styles for desktop */
+}
+
+@media (orientation: landscape) {
+	/* styles for landscape */
+	header {
+		background-color: green;
+	}
+}
+
+@media (orientation: portrait) {
+	/* styles for landscape */
+	header {
+		background-color: darkgoldenrod;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	/* styles for dark mode */
+	section {
+		background-color: black;
+	}
+	section p {
+		color: white;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	/* styles for dark mode */
+	section {
+		background-color: lightblue;
+	}
+	section p {
+		color: darkslategrey;
+	}
+}
+
+@media print {
+	.box {
+		background-image: none;
+		background-color: brown;
+	}
+	.box::after {
+		content: "Printed";
+		color: white;
+	}
+}
