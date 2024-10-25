@@ -1,112 +1,202 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
 img {
-	width: 100%;
+  max-width: 100%;
 }
+
+.continer {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background: #0020f4;
+  top: 0;
+  left: 0;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.titel2 {
+  border-radius: 28px;
+  padding: 10px;
+  color: #171717;
+  background: #ffffff;
+}
+.titel22 {
+  border-radius: 28px;
+  padding: 10px;
+  color: white;
+  background-color: #0a22f4;
+  text-align: center;
+}
+.logo {
+  text-align: left;
+  max-width: 100%;
+  width: 115px;
+  height: 65px;
+  object-fit: cover;
+  display: inline-block;
+}
+.bigimg {
+  width: 1100px;
+  padding-left: 90px;
+}
+
+nav,
+nav li {
+  display: inline-block;
+}
+
+nav,
+.logo {
+  vertical-align: middle;
+}
+
+nav {
+  width: 75%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 3px;
+}
+
+nav li a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.sec1 {
+  background-color: #0020f4;
+}
+
 .container {
-	max-width: 1400px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 16px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  color: #ffffff;
 }
 ul {
-	list-style: none;
+  list-style: none;
 }
 a {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 .header-wrapper {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 header {
-	background-color: blue;
-	padding: 20px 0;
+  background-color: blue;
+  padding: 20px 0;
 }
 .header-wrapper ul {
-	display: flex;
-	align-items: center;
-	gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 header li::before {
-	/* content: "🔥"; */
+  /* content: "🔥"; */
 }
 header li:after {
-	content: "";
-	display: block;
-	width: 50%;
-	height: 2px;
-	background-color: white;
-	margin: 0 auto;
-	border-radius: 5px;
-	transition: all 0.3s;
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 5px;
+  transition: all 0.3s;
 }
 header li:hover::after {
-	width: 100%;
+  width: 100%;
 }
 .box {
-	width: 300px;
-	height: 200px;
-	background-position: center;
-	background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
 }
 .box:nth-child(2n) {
-	background-image: url("../images/paraplanit-frena-gudaurshi-1.jpg");
+  background-image: url("../images/paraplanit-frena-gudaurshi-1.jpg");
 }
 .box:nth-child(2n + 1) {
-	background-image: url("../images/paraplanit-frena-gudaurshi-4.jpg");
+  background-image: url("../images/paraplanit-frena-gudaurshi-4.jpg");
 }
 footer {
-	background-color: blue;
+  background-color: blue;
 }
 
 form > * {
-	display: block;
-	margin-bottom: 10px;
-	width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .footer-grid {
-	padding: 20px 0;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .made-by {
-	border-top: 1px solid white;
+  border-top: 1px solid white;
 }
 
 iframe {
-	width: 100%;
-	height: 400px;
+  width: 100%;
+  height: 400px;
 }
 
 .button-parent {
-	display: flex;
-	justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 .parent {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
-	flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .about {
-	header {
-		background-color: red;
-	}
+  header {
+    background-color: red;
+  }
 }
 
 .about__header {
-	background-color: red;
+  background-color: red;
 }
 /* 768    mobile */
 /* 768-1024 tablet */
@@ -116,85 +206,84 @@ iframe {
 } */
 
 @media (768px < width < 1024px) {
-	.box:nth-child(2n + 1) {
-		background-color: red;
-		background-blend-mode: darken;
-	}
+  .box:nth-child(2n + 1) {
+    background-color: red;
+    background-blend-mode: darken;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-	/* styles for tablet */
+  /* styles for tablet */
 }
 
 @media (width < 768px) {
-	section {
-		background-color: blueviolet;
-	}
+  section {
+    background-color: blueviolet;
+  }
 
-	.footer-grid {
-		grid-template-columns: 1fr;
-	}
-	header nav {
-		display: none;
-	}
-	.box:last-child {
-		order: -1;
-	}
-	.box:nth-child(2n + 1) {
-		background-color: darkblue;
-		background-blend-mode: multiply;
-	}
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  header nav {
+    display: none;
+  }
+  .box:last-child {
+    order: -1;
+  }
+  .box:nth-child(2n + 1) {
+    background-color: darkblue;
+    background-blend-mode: multiply;
+  }
 }
 
 /* @media(min-width: 768px){} */
 @media (width > 768px) {
-	/* styles for tablet */
+  /* styles for tablet */
 }
 @media (width > 1024px) {
-	/* styles for desktop */
+  /* styles for desktop */
 }
 
 @media (orientation: landscape) {
-	/* styles for landscape */
-	header {
-		background-color: green;
-	}
+  /* styles for landscape */
+  header {
+    background-color: blue;
+  }
 }
-
 @media (orientation: portrait) {
-	/* styles for landscape */
-	header {
-		background-color: darkgoldenrod;
-	}
+  /* styles for landscape */
+  header {
+    background-color: rgb(14, 11, 184);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-	/* styles for dark mode */
-	section {
-		background-color: black;
-	}
-	section p {
-		color: white;
-	}
+  /* styles for dark mode */
+  section {
+    background-color: black;
+  }
+  section p {
+    color: white;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-	/* styles for dark mode */
-	section {
-		background-color: lightblue;
-	}
-	section p {
-		color: darkslategrey;
-	}
+  /* styles for dark mode */
+  section {
+    background-color: lightblue;
+  }
+  section p {
+    color: darkslategrey;
+  }
 }
 
 @media print {
-	.box {
-		background-image: none;
-		background-color: brown;
-	}
-	.box::after {
-		content: "Printed";
-		color: white;
-	}
+  .box {
+    background-image: none;
+    background-color: brown;
+  }
+  .box::after {
+    content: "Printed";
+    color: white;
+  }
 }
