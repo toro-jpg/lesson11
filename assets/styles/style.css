@@ -27,7 +27,17 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.containerrr {
+  color: #781a1a;
+}
+.containerr {
+  background-color: #ffffff;
+}
 
+.ra {
+  color: #171717;
+  background-color: #ffffff;
+}
 header {
   width: 100%;
   background: #0020f4;
