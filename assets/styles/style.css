@@ -48,7 +48,7 @@ header {
   padding: 10px;
   color: white;
   background-color: #0a22f4;
-  text-align: center;
+  align-content: center;
 }
 .logo {
   text-align: left;
